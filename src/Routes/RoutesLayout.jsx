@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../navbar/Navbar'
+import Navbar from '../components/navbar/Navbar'
 import { Outlet } from 'react-router-dom'
 
 const RoutesLayout = (props) => {
@@ -18,7 +18,6 @@ const RoutesLayout = (props) => {
                 show_dropdown={show_dropdown}
                 dropdown_name={dropdown_name}
                 dropdown_items={dropdown_items}
-
             />
             <Outlet />
 

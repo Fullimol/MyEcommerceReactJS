@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import Input from '../shared/Input'
+import Input from '../../shared/Input'
 import useForm from '../../hooks/useForm'
-import Button from '../shared/Button'
+import Button from '../../shared/Button'
 import { ProductContext } from '../../context/ProductsProvider'
 import { inputType, inputDisabled } from '../../helper'
 

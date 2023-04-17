@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../shared/Button'
+import Button from '../../shared/Button'
 
 const CardProduct = (props) => {
     const { imagen, marca, modelo, precio, id, button_text, button_className, onClick, isInCarrito, handleEditProduct, quitarboton } = props

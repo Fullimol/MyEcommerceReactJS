@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import NavbarItems from './NavbarItems'
 import Dropdown from './Dropdown'
+import { NavLink } from 'react-router-dom'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { ProductContext } from '../../context/ProductsProvider'
+
 
 const navbar = (props) => {
   const { nombre_nav, navbar_items, show_dropdown, dropdown_items,dropdown_name } = props
+  const {carrito} = useContext(ProductContext)
+
+  console.log("El carrito llega", carrito.lenght) // ESTE VALOR ME LLEGA UNDEFINED
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
@@ -18,10 +25,16 @@ const navbar = (props) => {
               <NavbarItems key={nombre} nombre_items={nombre} path={path} />
             )) || "sin nav"}
 
-
-
             {!show_dropdown || <Dropdown dropdown_items={dropdown_items} dropdown_name={dropdown_name}/>}
           </ul>
+
+          <NavLink className={"nav-link"} to="/carrito">
+            <div className='me-2'>
+              <AiOutlineShoppingCart style={{fontSize: "2rem"}}/>
+              <sup className='text-danger' style={{fontSize:"1.5rem"}}>2{carrito.lenght}</sup>  {/* No me muestra el valor  */}
+            </div>
+          
+          </NavLink>
         </div>
       </div>
     </nav>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Formulario from '../formulario/Formulario'
+import Formulario from '../components/formulario/Formulario'
 
 const Agregar = () => {
   const initialState = {

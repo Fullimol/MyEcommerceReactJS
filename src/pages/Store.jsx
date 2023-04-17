@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import { ProductContext } from '../../context/ProductsProvider'
-import CardProduct from '../store/CardProduct'
-import Formulario from '../formulario/Formulario'
+import { ProductContext } from '../context/ProductsProvider'
+import CardProduct from '../components/store/CardProduct'
+import Formulario from '../components/formulario/Formulario'
 import Button from '../shared/Button'
 
 const Store = () => {

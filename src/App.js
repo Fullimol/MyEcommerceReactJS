@@ -1,4 +1,4 @@
-import Rutas from "./components/Routes/Rutas";
+import Rutas from "../src/Routes/Rutas";
 import ProductsProvider from "./context/ProductsProvider";
 
 function App() {

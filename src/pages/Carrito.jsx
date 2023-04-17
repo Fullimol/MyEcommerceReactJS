@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { ProductContext } from '../../context/ProductsProvider'
-import CardProduct from '../store/CardProduct'
+import { ProductContext } from '../context/ProductsProvider'
+import CardProduct from '../components/store/CardProduct'
 
 const Carrito = () => {
   const { carrito, removeProductCarrito } = useContext(ProductContext)
@@ -8,6 +8,7 @@ const Carrito = () => {
   return (
     <div className='container d-flex flex-column align-items-center'>
       <h1>Carrito</h1>
+      <h6>{carrito.length} productos</h6>
 
       <div className='d-flex'>
         {carrito.length < 1 ? (<h1 className='text-danger' style={{ marginTop: "60%" }}>(Carrito vacío)</h1>) : (carrito?.map((productoCarrito) => (

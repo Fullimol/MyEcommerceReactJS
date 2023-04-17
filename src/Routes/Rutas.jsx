@@ -4,7 +4,7 @@ import RoutesLayout from './RoutesLayout'
 import Home from '../pages/Home'
 import Store from '../pages/Store'
 import Carrito from '../pages/Carrito'
-import ProductsProvider from '../../context/ProductsProvider'
+import ProductsProvider from '../context/ProductsProvider'
 import Agregar from '../pages/Agregar'
 
 const Rutas = () => {
