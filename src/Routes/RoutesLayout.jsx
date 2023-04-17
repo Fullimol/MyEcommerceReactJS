@@ -8,11 +8,9 @@ const RoutesLayout = (props) => {
         <>
             <Navbar
                 nombre_nav={nombre_nav}
-
                 navbar_items={navbar_items || [
                     { nombre: 'Home', path: '/' },
                     { nombre: 'Store', path: '/store' },
-                    { nombre: 'Carrito', path: '/carrito' },
                     { nombre: 'Agregar', path: '/agregar'}
                 ]}
                 show_dropdown={show_dropdown}

@@ -13,7 +13,7 @@ const CardProduct = (props) => {
                     <h5 className="card-text">u$s{precio}</h5>
                     {<Button button_text={button_text} button_className={button_className} onClick={onClick} />}
                     {quitarboton ?(<>
-                            {isInCarrito && <Button button_text={"editar"} button_className={"btn btn-warning ms-1 btn-sm"} onClick={() => handleEditProduct({ id, imagen, marca, modelo, precio })} />}
+                            {isInCarrito && <Button button_text={"editar"} button_className={"btn btn-warning ms-1"} onClick={() => handleEditProduct({ id, imagen, marca, modelo, precio })} />}
                         </>) : (<>{isInCarrito ? <Button button_text={"editar"} button_className={"btn btn-secondary disabled ms-1 btn-sm"}/> : null}</>)
                     }
 

@@ -6,7 +6,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { ProductContext } from '../../context/ProductsProvider'
 
 
-const navbar = (props) => {
+const Navbar = (props) => {
   const { nombre_nav, navbar_items, show_dropdown, dropdown_items,dropdown_name } = props
   const {carrito} = useContext(ProductContext)
 
@@ -28,10 +28,10 @@ const navbar = (props) => {
             {!show_dropdown || <Dropdown dropdown_items={dropdown_items} dropdown_name={dropdown_name}/>}
           </ul>
 
-          <NavLink className={"nav-link"} to="/carrito">
+          <NavLink className={"nav-link"} to="carrito">
             <div className='me-2'>
               <AiOutlineShoppingCart style={{fontSize: "2rem"}}/>
-              <sup className='text-danger' style={{fontSize:"1.5rem"}}>2{carrito.lenght}</sup>  {/* No me muestra el valor  */}
+              <sup className='text-danger' style={{fontSize:"1.5rem"}}>{carrito.lenght}</sup>  {/* No me muestra el valor  */}
             </div>
           
           </NavLink>
@@ -41,4 +41,4 @@ const navbar = (props) => {
   )
 }
 
-export default navbar
+export default Navbar

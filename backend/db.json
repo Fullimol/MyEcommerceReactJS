@@ -29,20 +29,5 @@
       "id": 4
     }
   ],
-  "carrito": [
-    {
-      "id": 1,
-      "imagen": "https://http2.mlstatic.com/D_NQ_NP_865169-MLA54833481393_042023-V.webp",
-      "marca": "SONY",
-      "modelo": "PlayStation 4",
-      "precio": "499"
-    },
-    {
-      "id": 2,
-      "imagen": "https://http2.mlstatic.com/D_NQ_NP_627149-MLA44484230438_012021-V.webp",
-      "marca": "Microsoft",
-      "modelo": "Xbox One Series S",
-      "precio": 450
-    }
-  ]
+  "carrito": []
 }
