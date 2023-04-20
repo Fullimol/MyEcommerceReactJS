@@ -7,10 +7,11 @@ import { ProductContext } from '../../context/ProductsProvider'
 
 
 const Navbar = (props) => {
-  const { nombre_nav, navbar_items, show_dropdown, dropdown_items,dropdown_name } = props
-  const {carrito} = useContext(ProductContext)
+  const { nombre_nav, navbar_items, show_dropdown, dropdown_items, dropdown_name } = props
+  const { carrito } = useContext(ProductContext)
 
-  console.log("El carrito llega", carrito.lenght) // ESTE VALOR ME LLEGA UNDEFINED
+  console.log("El carrito llega", carrito.length)
+  
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
@@ -25,15 +26,15 @@ const Navbar = (props) => {
               <NavbarItems key={nombre} nombre_items={nombre} path={path} />
             )) || "sin nav"}
 
-            {!show_dropdown || <Dropdown dropdown_items={dropdown_items} dropdown_name={dropdown_name}/>}
+            {!show_dropdown || <Dropdown dropdown_items={dropdown_items} dropdown_name={dropdown_name} />}
           </ul>
 
           <NavLink className={"nav-link"} to="carrito">
             <div className='me-2'>
-              <AiOutlineShoppingCart style={{fontSize: "2rem"}}/>
-              <sup className='text-danger' style={{fontSize:"1.5rem"}}>{carrito.lenght}</sup>  {/* No me muestra el valor  */}
+              <AiOutlineShoppingCart style={{ fontSize: "2rem" }} />
+              <sup className='text-danger' style={{ fontSize: "1.5rem" }}>{carrito.length}</sup>
             </div>
-          
+
           </NavLink>
         </div>
       </div>

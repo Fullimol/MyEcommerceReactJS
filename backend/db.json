@@ -12,7 +12,7 @@
       "imagen": "https://http2.mlstatic.com/D_NQ_NP_627149-MLA44484230438_012021-V.webp",
       "marca": "Microsoft",
       "modelo": "Xbox One Series S",
-      "precio": 450
+      "precio": "460"
     },
     {
       "id": 3,
@@ -29,5 +29,20 @@
       "id": 4
     }
   ],
-  "carrito": []
+  "carrito": [
+    {
+      "marca": "Lenovo",
+      "modelo": "IdeaPad",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_907439-MLA52573733450_112022-V.webp",
+      "precio": "320",
+      "id": 4
+    },
+    {
+      "id": 3,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_654420-MLA47953544237_102021-V.webp",
+      "marca": "Nintendo",
+      "modelo": "Switch",
+      "precio": "380"
+    }
+  ]
 }
