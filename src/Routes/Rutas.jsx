@@ -14,7 +14,7 @@ const Rutas = () => {
                 <Routes>
                     <Route path='/' element={<RoutesLayout
                         nombre_nav="eCommerce"
-                        show_dropdown
+                        // show_dropdown
                         dropdown_name="Más+"
 
                         dropdown_items={[

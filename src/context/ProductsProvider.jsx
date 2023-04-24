@@ -7,7 +7,7 @@ export const ProductContext = createContext("")
 
 const ProductsProvider = ({ children }) => {
   const { productos, getAllProducts, addNewProduct, edit, selectedProduct, handleEditProduct, handleCloseEditProduct, editProduct, deleteProduct } = useProducts()
-  const { carrito, getAllCarrito, addProductCarrito, removeProductCarrito, isInCarrito } = useCarrito()
+  const { carrito, getAllCarrito, addProductCarrito, removeProductCarrito, isInCarrito, getTotal } = useCarrito()
   const { form, handleChange } = useForm()
 
   useEffect(() => {

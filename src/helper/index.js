@@ -15,3 +15,12 @@ export const inputDisabled = (string) => {
             return false;
     }
 }
+
+export const inputrequired = (string) => {
+    switch(string) {
+        case 'imagen':
+            return false
+        default:
+            return true;
+    }
+}

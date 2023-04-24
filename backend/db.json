@@ -22,27 +22,34 @@
       "precio": "380"
     },
     {
+      "id": 4,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_907439-MLA52573733450_112022-V.webp",
       "marca": "Lenovo",
       "modelo": "IdeaPad",
-      "imagen": "https://http2.mlstatic.com/D_NQ_NP_907439-MLA52573733450_112022-V.webp",
+      "precio": "199"
+    },
+    {
+      "marca": "Top Mega",
+      "modelo": "Agile",
+      "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_871932-MLA52987956779_122022-AB.webp",
       "precio": "320",
-      "id": 4
+      "id": 5
+    },
+    {
+      "marca": "HP",
+      "modelo": "Omen",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_605447-MLA54849416205_042023-V.webp",
+      "precio": "899",
+      "id": 6
     }
   ],
   "carrito": [
     {
-      "marca": "Lenovo",
-      "modelo": "IdeaPad",
-      "imagen": "https://http2.mlstatic.com/D_NQ_NP_907439-MLA52573733450_112022-V.webp",
-      "precio": "320",
-      "id": 4
-    },
-    {
-      "id": 3,
-      "imagen": "https://http2.mlstatic.com/D_NQ_NP_654420-MLA47953544237_102021-V.webp",
-      "marca": "Nintendo",
-      "modelo": "Switch",
-      "precio": "380"
+      "id": 1,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_865169-MLA54833481393_042023-V.webp",
+      "marca": "SONY",
+      "modelo": "PlayStation 4",
+      "precio": "499"
     }
   ]
 }

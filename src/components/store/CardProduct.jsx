@@ -1,12 +1,17 @@
 import React from 'react'
 import Button from '../../shared/Button'
+import '../../../src/index.css'
+
 
 const CardProduct = (props) => {
     const { imagen, marca, modelo, precio, id, button_text, button_className, onClick, isInCarrito, handleEditProduct, quitarboton } = props
+    
+    const imageNotFound = "https://static.vecteezy.com/system/resources/previews/005/337/799/non_2x/icon-image-not-found-free-vector.jpg"
+
     return (
-        <div className='m-4'>
-            <div key={id} className="card" style={{ width: "18rem" }}>
-                <img src={imagen} className="h-50" alt="..." />
+        <div>
+            <div key={id} className="card text-center m-2" >
+                <img src={imagen || imageNotFound} className="card-img-top producto-imagen" alt="..." />
                 <div className="card-body">
                     <h6 className="card-title">{marca}</h6>
                     <h4 className="card-title">{modelo}</h4>

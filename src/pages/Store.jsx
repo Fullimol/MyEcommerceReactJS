@@ -21,7 +21,8 @@ const Store = () => {
           <Formulario edit={edit} initialState={selectedProduct} />
         </div>) : (<>
           <h1>Productos en Stock</h1>
-          <div className='d-flex'>
+          <div className="container">
+            <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             {productos?.map((producto) => (
               <CardProduct key={producto.id}
                 {...producto}
@@ -33,6 +34,7 @@ const Store = () => {
                 quitarboton={!isInCarrito(producto.id) ? true : false}
               />
             ))}
+            </div>
           </div>
         </>)}
     </div>
@@ -40,3 +42,19 @@ const Store = () => {
 }
 
 export default Store
+
+
+
+{/* <div className='d-flex'>
+            {productos?.map((producto) => (
+              <CardProduct key={producto.id}
+                {...producto}
+                button_text={!isInCarrito(producto.id) ? "Añadir al carrito" : "Quitar del carrito"}
+                button_className={!isInCarrito(producto.id) ? "btn btn-primary" : "btn btn-danger"}
+                onClick={!isInCarrito(producto.id) ? () => addProductCarrito(producto) : () => removeProductCarrito(producto.id)}
+                isInCarrito
+                handleEditProduct={handleEditProduct}
+                quitarboton={!isInCarrito(producto.id) ? true : false}
+              />
+            ))}
+          </div> */}
