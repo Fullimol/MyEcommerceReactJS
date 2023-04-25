@@ -10,8 +10,6 @@ const Navbar = (props) => {
   const { nombre_nav, navbar_items, show_dropdown, dropdown_items, dropdown_name } = props
   const { carrito } = useContext(ProductContext)
 
-  console.log("El carrito llega", carrito.length)
-
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">

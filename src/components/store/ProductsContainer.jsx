@@ -9,6 +9,7 @@ const ProductsContainer = () => {
   useEffect(() => {
     getAllProductos()
   }, [])
+  
   return (
     <div >
       {products.map(({ title, description, image, price, id }) => (
