@@ -43,13 +43,5 @@
       "id": 6
     }
   ],
-  "carrito": [
-    {
-      "id": 2,
-      "imagen": "https://http2.mlstatic.com/D_NQ_NP_627149-MLA44484230438_012021-V.webp",
-      "marca": "Microsoft",
-      "modelo": "Xbox One Series S",
-      "precio": "460"
-    }
-  ]
+  "carrito": []
 }
