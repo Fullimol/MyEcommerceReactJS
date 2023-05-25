@@ -24,6 +24,7 @@ const Store = () => {
           <div className="container">
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               {productos?.map((producto) => (
+
                 <CardProduct key={producto.id}
                   {...producto}
                   button_text={!isInCarrito(producto.id) ? "Añadir al carrito" : "Quitar del carrito"}
@@ -33,6 +34,7 @@ const Store = () => {
                   handleEditProduct={handleEditProduct}
                   quitarboton={!isInCarrito(producto.id) ? true : false}
                 />
+
               ))}
             </div>
           </div>

@@ -11,7 +11,7 @@ const RoutesLayout = (props) => {
                 navbar_items={navbar_items || [
                     { nombre: 'Home', path: '/' },
                     { nombre: 'Store', path: '/store' },
-                    { nombre: 'Agregar', path: '/agregar'}
+                    { nombre: 'Agregar', path: '/agregar' }
                 ]}
                 show_dropdown={show_dropdown}
                 dropdown_name={dropdown_name}

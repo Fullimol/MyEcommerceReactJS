@@ -20,7 +20,7 @@ function Counter(props) {
 
             </div>
 
-            {/* <Button onClick={() => addProductCarrito({ ...producto, count })} button_className="btn btn-warning" button_text="añadir" /> */}
+            {/* <Button onClick={() => addProductCarrito({ ...producto, count })} button_className="btn btn-warning" button_text="añadir count" /> */}
         </>
     );
 }
